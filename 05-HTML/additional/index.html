@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Заполните анкету</h1>
+    <table >
+        
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <input type="text" name="name" required="имя"placeholder="Имя" autofocus pattern="[A-Za-zА-Яа-яЁё]"size="25"><br>
+                    <input type="text" name="name2" required="фамилия"placeholder="Фамилия"  pattern="[A-Za-zА-Яа-яЁё]"size="20"><br>
+                    <input type="text" name="name3" required="отчество"placeholder="Отчество"  pattern="[A-Za-zА-Яа-яЁё]"size="24">
+                </fieldset>
+            </td>
+        
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post1">
+                <fieldset>
+                    <legend>Паспортные данные</legend>
+                    <input type="text" name="name" required="серия"placeholder="Серия"  pattern="[A-Z]"pattern="[A-Za-z]{2,}"maxlength="2"size="2">
+                    <input type="text" name="name2" required="номер паспорта"placeholder="Номер паспорта"  pattern="[A-Za-zА-Яа-яЁё]"maxlength="7">
+                </fieldset>
+            </td>
+        
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post2">
+                <fieldset>
+                    <legend>Дата рождения</legend>
+                    <input type="date"name="calendar"min="0000-00-00" max="9999-12-31">
+                </fieldset>
+            
+            </td>
+        </tr>  
+    </table>
+    
+    </table>
+
+    
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post3">
+                <fieldset>
+                    <select name="list" id="list">
+                        <option value="1">КЗ</option>
+                        <option value="2">РФ</option>
+                        <option value="0" selected>РБ</option>
+                        </select><br>
+                        <p>Адрес</p>
+                        <textarea name="text_area" lang=“ru”>Адрес </textarea>
+                </fieldset>
+            
+            </td>
+        </tr>       
+    </table>
+    </table>
+    <table>
+        <br>Интересы<br>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post4">
+                <fieldset>
+                    <legend>Хобби</legend>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> рыбалка
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> астрономия
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> дайвинг
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> марки
+                    </label><br>
+                </fieldset>
+            
+            </td>
+        </tr>  
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post5">
+                <fieldset>
+                    <legend>домашние животныве</legend>
+                    <select multiple="list" id="list">
+                        <optgroup label="Попугаи">
+                        <option value="1">Волнистый</option>
+                        <option value="2">Ара</option>
+                        <option value="3">Неразлучник</option>
+                        </optgroup>
+                        <optgroup label="Рыба">
+                        <option value="4">Караси</option>
+                        <option value="5">Окуни</option>
+                        <option value="6">Осётр</option>
+                        </optgroup>
+                        </select>
+                </fieldset>
+            
+            </td>
+        </tr>  
+    </table>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post6">
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <input type="text" id="login" name="login"placeholder="Логин"required="Логин" pattern="[A-Z]"pattern="[A-Za-z]{5,}"size="20">
+                    <input type="password" id="pass" name="password"placeholder="Пароль"required="Пароль" pattern="[A-Z]"pattern="[A-Za-z]{10,}"size="20"autocomplete="off">
+                </fieldset>
+            
+            </td>
+        </tr>  
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post7">
+                <fieldset>
+                    <legend>Координаты</legend>
+                    <input type="email" placeholder="введите адрес почты"> <br>
+                    <input type="url" placeholder="введите адрес сайта"> <br>
+            
+            </td>
+        </tr>  
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post8">
+                <fieldset>
+                    <legend>Цифры</legend>
+                    <input type="number"step="0.1"min="-2.5"max="2.5"><br>
+                    <input type="range"maxlength="10" minlength="1">
+            
+            </td>
+        </tr>  
+    </table>
+    <table>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post9">
+                <fieldset>
+                    <legend>Кнопка управления</legend>
+                    <input type="submit"  value="Отправить">
+                    <input type="reset"  value="Сбросить">
+                    <input type="image" src="1.png"width="10%">
+                    
+            </form>
+            </td>
+        </tr>  
+    </table>
+</head>
+<body>
+    
+</body>
+</html>
