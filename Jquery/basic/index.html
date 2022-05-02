@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+         width: 50%; 
+         border-collapse: collapse; 
+         border: 2px solid white; 
+        }
+        td {
+         
+         padding: 5px; 
+         border-style: dotted;
+         border-width:2px;
+         
+         
+        }
+        caption { 
+         caption-side: bottom;
+        }
+        .a1{
+            background-color:rgb(54, 50, 50);
+            border-top: 0px ;
+        }
+        .a2{
+            background-color:rgb(156, 146, 146)
+        }
+        tr:hover{
+            background-color:rgb(224, 240, 10)
+        }
+       </style>
+      </head>
+      <body>
+       <table>
+        <caption><h2>Данные о сотрудниках</h2></caption>
+        <tr class="a1">
+            <td>ФИО</td><td>пол</td><td>должность</td><td>дата рож</td><td>данные 01</td><td>данные 02</td>
+        </tr>
+        <tr>
+            <td>Иванов Иван Иванович</td><td>м</td><td>начальник</td><td>01.01.1960</td><td>2353246</td><td>5463</td>
+        </tr>
+        <tr class="a2">
+            <td>Петрова Илонна Петровна</td><td>ж</td><td>секретарь</td><td>01.01.1950</td><td>235236</td><td>243634</td>
+        </tr>
+        <tr>
+            <td>Сидоров Илья Игоревич</td><td>м</td><td>бухгалтер</td><td>01.01.1970</td><td>53276</td><td>2346342</td>
+        </tr>
+        <tr class="a2">
+            <td>Пупин Фёдор Фёдорович</td><td>м</td><td>водитель 1</td><td>01.01.1980</td><td>342632</td><td>6437</td>
+        </tr>
+        <tr>
+            <td>Крупин Сергей Иванович</td><td>м</td><td>водитель 2</td><td>01.01.1990</td><td>6456</td><td>54645</td>
+        </tr>
+       </table>
+    <button id="b">Нет скрытых строк</button>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+
+
+$("td").click(function(){
+    $(this).parent("tr").hide("none");
+});
+$("#b").click(function(){
+    $("tr").show("none");
+});
+$("td").click(function(){
+    $("span").text;
+});
+$("#b").click(function(){
+    $("span").text;
+});
+
+  </script>
+</body>
+</html>

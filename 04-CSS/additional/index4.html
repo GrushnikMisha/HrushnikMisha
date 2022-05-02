@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 600px;	height: 81px;
+    outline: 2px solid #000; 
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    margin: 2px;
+        }
+       a[href^="doc"]::after{
+           content: url("../basic/style/1.png");
+       }
+       a[href$="MS"]::after{
+           content: url("../basic/style/5.jpg");
+       }
+       a[href*="zip"]::before{
+           content: url("../basic/style/2.gif");
+       }   
+        [class~="a1"] a::before{
+            content: url("../basic/style/3.jpg");
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Форматы файлов.</h2>
+   <p> .DOC или .doc (от англ.  <a href="doc">document</a>) - расширение имени файла, исползуемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов с разметкой.
+    <a href="MS">Документ MS Word</a></p>
+
+<p>Portable Document Format (<img src="style/1.png"><a href="pdf">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.
+    <img src="style/4.png"><a href="post">Документ PDF</a></p>
+
+<p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение<a href="zip">.zip </a>и хранит в сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путем распаковки с помощью специальной программы.
+    <a href="zip">Архив</a></p>
+<h3>Это список файлов</h3>
+<div class="a1">
+<a href="">Документ MS Word</a><br>
+<a href="">Документ PDF</a><br>
+<a href="">Архив</a>
+</div>
+</body>
+</html>
